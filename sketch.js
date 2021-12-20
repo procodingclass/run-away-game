@@ -59,7 +59,7 @@ function setup() {
   // player.debug = true;
 
   ground1 = createSprite(width / 4, height / 2.9, width / 2.15, 80);
-  ground1.setCollider("rectangle", 0, 0, width / 2.2, 50);
+  ground1.setCollider("rectangle", 0, 0, width / 2.4, 50);
   ground1.visible = false;
   ground1.debug = true;
 
