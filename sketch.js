@@ -27,7 +27,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1500, 900);
+  // 1366, 625
 
   edges = createEdgeSprites();
 
@@ -55,20 +56,20 @@ function setup() {
   player.addImage(playerImg);
   player.scale = 0.015;
   player.velocityY = 2;
-  player.debug = true;
+  // player.debug = true;
 
   ground1 = createSprite(width / 4, height / 2.9, width / 2.15, 80);
   ground1.setCollider("rectangle", 0, 0, width / 2.2, 50);
   ground1.visible = false;
   ground1.debug = true;
 
-  pillar1 = createSprite(280, height / 4, 100, 100);
-  pillar1.setCollider("rectangle", 0, 0, 50, 100);
+  pillar1 = createSprite(230, height / 4, 100, 90);
+  pillar1.setCollider("rectangle", 0, 0, 50, 90);
   pillar1.visible = false;
   pillar1.debug = true;
 
-  pillar2 = createSprite(width / 3.2, height / 4.2, 120, 135);
-  pillar2.setCollider("rectangle", 0, 0, 65, 135);
+  pillar2 = createSprite(width / 3.2, height / 4.2, 120, 120);
+  pillar2.setCollider("rectangle", 0, 0, 60, 120);
   pillar2.visible = false;
   pillar2.debug = true;
 
@@ -78,7 +79,7 @@ function setup() {
   ground2.debug = true;
 
   pillar3 = createSprite(width / 1.76, height / 1.87, 120, 135);
-  pillar3.setCollider("rectangle", 0, 0, 65, 135);
+  pillar3.setCollider("rectangle", 0, 0, 65, 120);
   pillar3.visible = false;
   pillar3.debug = true;
 
